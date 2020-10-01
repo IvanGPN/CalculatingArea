@@ -1,0 +1,4 @@
+SELECT product.name, category.name FROM product
+INNER JOIN productCategory ON product.id_product = productCategory.id_product 
+LEFT JOIN category ON category.id_category = productCategory.id_category
+ORDER BY product.name ASC
